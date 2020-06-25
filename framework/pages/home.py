@@ -1,6 +1,9 @@
 from flask import Blueprint, render_template, session
 
-page_home = Blueprint('page_home', __name__, template_folder='../templates')
+page_home = Blueprint('page_home',
+                      __name__,
+                      template_folder='../templates',
+                      static_folder='../static/')
 @page_home.route("/", methods=['GET'])
 def home():
     if 'user' in session:
