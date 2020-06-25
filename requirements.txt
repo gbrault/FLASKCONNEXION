@@ -1,0 +1,10 @@
+flask_sqlalchemy
+OpenAlchemy
+PyYAML
+alembic
+passlib
+flake8
+pytest
+flask-mail
+python-dotenv
+itsdangerous

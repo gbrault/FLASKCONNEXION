@@ -1,0 +1,11 @@
+version: '3'
+services:
+  framework:
+    container_name: framework
+    build: .
+    ports:
+      - "8000:5000"
+    env_file: .env
+    command: >
+      sh -c "python /framework/app.py"
+    restart: always

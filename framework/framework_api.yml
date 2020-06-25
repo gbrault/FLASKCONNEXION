@@ -1,0 +1,65 @@
+openapi: "3.0.0"
+
+info:
+  title: Open VPN Management Schema
+  description: API to manage OpenVPN servers
+  version: "0.0"
+servers:
+  - url: http://localhost:8000/v1
+    description: Development server
+paths:
+  /user:
+    get:
+      operationId: api.search
+      summary: Used to retrieve all users.
+      responses:
+          200:
+            description: Return all Users from the database.
+            content:
+              application/json:
+                schema:
+                  type: array
+                  items:
+                    $ref: "#/components/schemas/User"    
+components:    
+  schemas:
+    User:
+      description: Person that use this service.
+      type: object
+      x-tablename: user
+      properties:
+        id:
+          type: integer
+          description: Unique internal identifier for the user.
+          example: 0
+          x-primary-key: true
+          x-autoincrement: true
+        email:
+          type: string
+          description: User email address
+          example: "gbrault@seadev.org"
+          x-unique: true
+          x-index: true
+        firstname:
+          type: string
+          description: The firstname of the user.
+          example: David
+          x-index: true
+        lastname:
+          type: string
+          description: The lastname of the user.
+          example: Andersson
+          x-index: true
+        role:
+          type: string
+          enum:
+            - "admin"
+            - "staff"
+            - "customer"
+            - "supplier"
+          description: The role of the user.
+          example: staff
+          x-index: true
+      required:
+        - email
+        - role
