@@ -15,7 +15,7 @@ create a .env file there (see thereafter)
 docker-compose up -d
 ```
 
-ctop is nice to check docker result [bcicen/ctop](https://github.com/bcicen/ctop)
+ctop is nice to check docker containers [bcicen/ctop](https://github.com/bcicen/ctop)
 
 ### When up and runing
 
