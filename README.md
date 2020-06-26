@@ -19,9 +19,9 @@ ctop is nice to check docker result [bcicen/ctop](https://github.com/bcicen/ctop
 
 ### When up and runing
 
--[home page](http://localhost:8000) 
--[swagger test pages](http://localhost:8000/v1/ui)
--[the user API](http://localhost:8000/v1/user) => give an empty result as the database is empty...
+- [home page](http://localhost:8000) 
+- [swagger test pages](http://localhost:8000/v1/ui)
+- [the user API](http://localhost:8000/v1/user) => give an empty result as the database is empty...
 
 ### set some user using ctop
 
