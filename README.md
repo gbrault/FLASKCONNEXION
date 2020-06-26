@@ -10,9 +10,9 @@ Prerequisite: a docker enabled machine
 
 ```
 git clone ...
-cd ...
-create a .env file
-docker-compose ud -d
+cd FLASCONNEXION
+create a .env file there (see thereafter)
+docker-compose up -d
 ```
 
 ctop is nice to check docker result [bcicen/ctop](https://github.com/bcicen/ctop)
