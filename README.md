@@ -1,6 +1,6 @@
 # FLASKCONNEXION
 
-Blending Flask and Zalando connexion provides a clean way of development for API based project with associated Web UI.
+Blending Flask and [Zalando connexion](https://github.com/zalando/connexion) provides a clean way of development for API based project with associated Web UI.
 
 This project is a template for such kind of developments.
 
