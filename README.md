@@ -17,6 +17,21 @@ docker-compose up -d
 
 ctop is nice to check docker result [bcicen/ctop](https://github.com/bcicen/ctop)
 
+### When up and runing
+
+-[home page](http://localhost:8000) 
+-[swagger test pages](http://localhost:8000/v1/ui)
+-[the user API](http://localhost:8000/v1/user) => give an empty result as the database is empty...
+
+### set some user using ctop
+
+entering inside the runing container with ctop
+```
+sqlite3 framework.db
+>.schema
+...
+>INSERT INTO user (email, firstname, lastname, role) VALUES ("gbrault@seadev.org","Gilbert","Brault","admin")
+```
 
 ## .env file
 
