@@ -10,7 +10,7 @@ Prerequisite: a docker enabled machine
 
 ```
 git clone ...
-cd FLASCONNEXION
+cd FLASKCONNEXION
 create a .env file there (see thereafter)
 docker-compose up -d
 ```
