@@ -33,6 +33,16 @@ sqlite3 framework.db
 >INSERT INTO user (email, firstname, lastname, role) VALUES ("gbrault@seadev.org","Gilbert","Brault","admin")
 ```
 
+### making some changes
+
+- Change the framework_api.yml file to add new API path
+   - each tile you add a new API path
+   - add the corresponding implementation function in api.py specified with the operationId tag
+- To add a new Web UI page
+   - add a new template in the templates folder
+   - add a new processing backend in the pages folder
+   - add this page in the app.py entrypoint
+
 ## .env file
 
 ```
