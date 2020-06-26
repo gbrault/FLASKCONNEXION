@@ -1,8 +1,8 @@
 # FLASKCONNEXION
 
-Blending [Flask](https://github.com/pallets/flask) and [Zalando connexion](https://github.com/zalando/connexion) provides a clean way of development for API based project with associated Web UI.
+This is a template blending [Flask](https://github.com/pallets/flask) and [Zalando connexion](https://github.com/zalando/connexion).
 
-This project is a template for such kind of developments.
+It provides a clean way of development for API based project with associated Web UI.
 
 ## How to tweak?
 
